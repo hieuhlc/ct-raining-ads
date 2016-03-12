@@ -1,0 +1,76 @@
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.imageContainer {
+  height: 20vh;
+  width: 10vw;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.imageContainer img {
+  max-height: 70px;
+  min-width: 90px;
+  max-width: 10vw;
+  pointer-events: none;
+}
+
+/* Animate.css */
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100vh, 0);
+    transform: translate3d(0, -100vh, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100vh, 0);
+    transform: translate3d(0, -100vh, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.dragOver {
+  border: 1px solid red;
+}
