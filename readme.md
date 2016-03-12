@@ -15,6 +15,8 @@ npm install
 npm start
 ```
 
+Then locate to `localhost:3000`
+
 # Improvements
 - User can decide the rain speed.
 - Add moving effect when swap ads.
