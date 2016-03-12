@@ -5,17 +5,17 @@ When the screen is filled up, bottom line will disappear. User can also rearrang
 
 Press `Esc` key to stop the rain.
 
-##Installation
+# Installation
 ```
 npm install
 ```
 
-##Run
+# Run
 ```
 npm start
 ```
 
-##Improvements
+# Improvements
 - User can decide the rain speed.
 - Add moving effect when swap ads.
 - User can move ads to left/right when it's falling. Just like Tetris.
